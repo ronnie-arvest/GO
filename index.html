@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="RU">
   <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,6 +39,60 @@
         <li>Wild west</li>
         <li>Neon style</li>
       </ol>
+      <h1 id="booking">Забронировать</h1>
+      <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+
+        <fieldset style="width: 400px;" aria-required="true">
+          <input type="radio" name="rooms" value="80's vibes">80's vibes
+          <input type="radio" name="rooms" value="Star wars">Star wars
+          <input type="radio" name="rooms" value="Wild west">Wild west
+          <input type="radio" name="rooms" value="Neon style">Neon style
+        </fieldset>
+
+        <fieldset style="width: 400px;">
+          <legend>Собери набор развлечений</legend>
+            <fieldset>
+                <legend>Приставка</legend>
+                <input type="radio" name="console" value="Playstation">Playstation
+                <input type="radio" name="console" value="Sega Mega Drive">Sega Mega Drive
+                <input type="radio" name="console" value="X-box One S">X-box One S
+                <input type="radio" name="console" value="Dendy">Dendy
+            </fieldset>
+            <fieldset>
+              <legend>Настольные игры</legend>
+                <input type="checkbox" name="board games" value="Jenga">Jenga
+                <input type="checkbox" name="board games" value="Monopoly">Monopoly
+                <input type="checkbox" name="board games" value="Munchkin">Манчкин
+                <input type="checkbox" name="board games" value="Alias">Alias
+            </fieldset>
+            <fieldset>
+              <legend>Дополнительно</legend>
+              <input type="checkbox" name="additionally" value="Karaoke">Караоке
+              <input type="checkbox" name="additionally" value="VR">VR
+            </fieldset>
+        </fieldset>
+        <fieldset style="width: 400px;">
+          <legend>Выбери дату и время</legend>
+            Дата<sup>*</sup>
+              <input type="date" name="date" required>
+            Время<sup>*</sup>
+              <input type="time" name="time" required><br>
+            Количество человек<sup>*</sup>
+              <input type="text" name="people" required><br>
+            Имя<sup>*</sup>
+              <input type="name" name="firstname" required><br>
+            Фамилия<sup>*</sup>
+              <input type="text" name="lastname" required><br>
+            Номер телефона<sup>*</sup>
+              <input type="tel" name="tel" required><br>
+            <input type="checkbox" name="ageconfirm" required>
+            Я старше 18 лет
+        </fieldset><br>
+
+      <button type="submit">Забронировать</button>
+      <input type="checkbox" name="policy" required>Согласен на обработку данных
+      </form>
+
     <h3 id="about">О нас</h3>
       <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
       <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
