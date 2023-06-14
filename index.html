@@ -42,36 +42,50 @@
       <h1 id="booking">Забронировать</h1>
       <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
 
-        <fieldset style="width: 400px;" aria-required="true">
-          <input type="radio" name="rooms" value="80's vibes">80's vibes
-          <input type="radio" name="rooms" value="Star wars">Star wars
-          <input type="radio" name="rooms" value="Wild west">Wild west
-          <input type="radio" name="rooms" value="Neon style">Neon style
+        <fieldset style="width: 470px;" aria-required="true">
+          <input type="radio" name="rooms" id="rooms_1" value="80's vibes" >
+          <label for="rooms_1">80's vibes</label>
+          <input type="radio" name="rooms" id="rooms_2" value="Star wars">
+          <label for="rooms_2">Star wars</label>
+          <input type="radio" name="rooms" id="rooms_3" value="Wild west">
+          <label for="rooms_3">Wild west</label>
+          <input type="radio" name="rooms" id="rooms_4" value="Neon style">
+          <label for="rooms_4">Neon style</label>
         </fieldset>
 
-        <fieldset style="width: 400px;">
+        <fieldset style="width: 470px;">
           <legend>Собери набор развлечений</legend>
             <fieldset>
                 <legend>Приставка</legend>
-                <input type="radio" name="console" value="Playstation">Playstation
-                <input type="radio" name="console" value="Sega Mega Drive">Sega Mega Drive
-                <input type="radio" name="console" value="X-box One S">X-box One S
-                <input type="radio" name="console" value="Dendy">Dendy
+                <input type="radio" name="console" id="console_1" value="Playstation">
+                <label for="console_1">Playstation</label>
+                <input type="radio" name="console" id="console_2" value="Sega Mega Drive">
+                <label for="console_2">Sega Mega Drive</label>
+                <input type="radio" name="console" id="console_3" value="X-box One S">
+                <label for="console_3">X-box One S</label>
+                <input type="radio" name="console" id="console_4" value="Dendy">
+                <label for="console_4">Dendy</label>
             </fieldset>
             <fieldset>
               <legend>Настольные игры</legend>
-                <input type="checkbox" name="board games" value="Jenga">Jenga
-                <input type="checkbox" name="board games" value="Monopoly">Monopoly
-                <input type="checkbox" name="board games" value="Munchkin">Манчкин
-                <input type="checkbox" name="board games" value="Alias">Alias
+                <input type="checkbox" name="board_games" id="board_games_1" value="Jenga">
+                <label for="board_games_1">Jenga</label>
+                <input type="checkbox" name="board_games" id="board_games_2" value="Monopoly">
+                <label for="board_games_2">Monopoly</label>
+                <input type="checkbox" name="board_games" id="board_games_3" value="Munchkin">
+                <label for="board_games_3">Манчкин</label>
+                <input type="checkbox" name="board_games" id="board_games_4" value="Alias">
+                <label for="board_games_4">Alias</label>
             </fieldset>
             <fieldset>
               <legend>Дополнительно</legend>
-              <input type="checkbox" name="additionally" value="Karaoke">Караоке
-              <input type="checkbox" name="additionally" value="VR">VR
+              <input type="checkbox" name="additionally" id="additionally_1" value="Karaoke">
+              <label for="additionally_1">Караоке</label>
+              <input type="checkbox" name="additionally" id="additionally_2" value="VR">
+              <label for="additionally_2">VR</label>
             </fieldset>
         </fieldset>
-        <fieldset style="width: 400px;">
+        <fieldset style="width: 470px;">
           <legend>Выбери дату и время</legend>
             Дата<sup>*</sup>
               <input type="date" name="date" required>
