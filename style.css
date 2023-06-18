@@ -12,3 +12,35 @@ body {
   background-color: #1B1A1B;
   color: #FFFFFF;
 }
+
+.element {
+  background-color: #fff;
+  color: #1C1A1A;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 30px 70px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.element:nth-child(even) {
+  background-color: #440F51;
+  color: #fff;
+  list-style-type: none;
+}
+
+.element:nth-child(even):after {
+  content: url(img/open.svg);
+  width: 50px;
+  position: relative;
+  float: right;
+  top: -10px;
+}
+
+.element:nth-child(odd):after {
+  content: url(img/open-purple.svg);
+  width: 50px;
+  position: relative;
+  float: right;
+  top: -10px;
+}
