@@ -24,6 +24,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.halls {
+  margin-top: 700px;
+}
+
 .halls h3 {
   text-align: center;
   font-size: 40px;
@@ -46,28 +50,6 @@ a:hover {
   height: 160px;
   left: 40%;
   top: 29%;
-  text-align: center;
-  color: #ffffff;
-  font-size: 70px;
-  text-transform: uppercase;
-}
-
-.img-halls-two {
-  position: relative;
-  background-image: url("/img/star_wars.jpg");
-  width: 100%;
-  height: 710px;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 60px;
-}
-
-.img-halls-two h2 {
-  position: absolute;
-  width: 211px;
-  height: 160px;
-  left: 40%;
-  top: 30%;
   text-align: center;
   color: #ffffff;
   font-size: 70px;
@@ -167,4 +149,24 @@ margin-bottom: 50px;
 
 .social img {
   margin-right: 20px;
+}
+
+.main-text h2 {
+  font-size: 150px;
+  text-transform: uppercase;
+  letter-spacing: -0.1em;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.main-text blockquote {
+  margin-left: 280px;
+  margin-top: 0;
+}
+
+.main-text img {
+  position: absolute;
+  top: 2060px;
+  right: 180px;
 }
