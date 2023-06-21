@@ -1,22 +1,58 @@
-* {
+html {
+  position: relative;
   box-sizing: border-box;
 }
 
-.wrapper {
-  width: 1200px;
-  padding: 30px;
-  margin: 0 auto;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
+  width: 1200px;
+  padding: 30px;
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100vh;
   font-family: 'Arial', sans-serif;
   background-color: #1B1A1B;
   color: #FFFFFF;
 }
 
+img, svg {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
 a {
   color: #fff;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, p, figure, fieldset {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 
 a:hover {
@@ -25,10 +61,11 @@ a:hover {
 }
 
 .halls {
-  margin-top: 700px;
+  padding: 20px;
 }
 
 .halls h3 {
+  padding-bottom: 50px;
   text-align: center;
   font-size: 40px;
   text-transform: uppercase;
@@ -36,12 +73,11 @@ a:hover {
 
 .img-halls-one {
   position: relative;
-  background-image: url("/img/80's-vibe.jpg");
   width: 100%;
   height: 710px;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .img-halls-one h2 {
@@ -151,22 +187,28 @@ margin-bottom: 50px;
   margin-right: 20px;
 }
 
+.main-text {
+  height: 920px;
+  padding: 20px;
+}
+
 .main-text h2 {
   font-size: 150px;
   text-transform: uppercase;
   letter-spacing: -0.1em;
-  text-align: center;
+  text-align: left;
   font-weight: 900;
   margin-bottom: 0;
 }
 
 .main-text blockquote {
-  margin-left: 280px;
+  text-align: left;
+  margin-left: 100px;
   margin-top: 0;
 }
 
 .main-text img {
   position: absolute;
-  top: 2060px;
-  right: 180px;
+  top: 1930px;
+  right: 635px;
 }
