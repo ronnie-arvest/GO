@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1200px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1B1A1B;
+  color: #FFFFFF;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gainsboro;
+  text-decoration: underline;
+}
+
+.halls h3 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.img-halls-one {
+  position: relative;
+  background-image: url("/img/80's-vibe.jpg");
+  width: 100%;
+  height: 710px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+}
+
+.img-halls-one h2 {
+  position: absolute;
+  width: 211px;
+  height: 160px;
+  left: 40%;
+  top: 29%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+.img-halls-two {
+  position: relative;
+  background-image: url("/img/star_wars.jpg");
+  width: 100%;
+  height: 710px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+}
+
+.img-halls-two h2 {
+  position: absolute;
+  width: 211px;
+  height: 160px;
+  left: 40%;
+  top: 30%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+.booking {
+  width: 100%;
+}
+
+.about h3 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+.text-about-p {
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.text-about-p:before {
+  font-size: 70px;
+  line-height: 50px;
+  text-transform: uppercase;
+  content: '\201c';
+  color: #6C0287;
+}
+
+.text-about-p:after {
+  font-size: 70px;
+  line-height: 50px;
+  text-transform: uppercase;
+  content: '\201d';
+  color: #6C0287;
+}
+
+.about-cite {
+margin-left: 800px;
+margin-bottom: 50px;
+}
+
+.about-img {
+  float: left;
+  margin-right: 20px;
+}
+
+.about-p {
+  width: 330px;
+  text-align: left;
+  line-height: 28px;
+}
+
+.contacts {
+  display: block;
+}
+
+.contacts h3 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+.location {
+  position: relative;
+  align-items: center;
+  padding-bottom: 30px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.location img {
+  padding-right: 20px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone img {
+  padding-right: 20px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.email img {
+  padding-right: 20px;
+}
+
+.social img {
+  margin-right: 20px;
+}
