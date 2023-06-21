@@ -8,9 +8,6 @@ html {
 }
 
 body {
-  width: 1200px;
-  padding: 30px;
-  margin: 0 auto;
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
@@ -42,8 +39,14 @@ ul {
   margin: 0;
 }
 
-h1, h2, h3, p, figure, fieldset {
+h1, h2, h3, figure, fieldset {
   margin: 0;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 24px;
+  margin-top: 0;
 }
 
 iframe {
@@ -53,6 +56,12 @@ iframe {
 .visually-hidden {
   position: fixed;
   transform: scale(0);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
 a:hover {
@@ -65,7 +74,7 @@ a:hover {
 }
 
 .halls h3 {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 40px;
   text-transform: uppercase;
@@ -104,7 +113,7 @@ a:hover {
 }
 
 .text-about-p {
-  font-size: 44px;
+  font-size: 42px;
   line-height: 50px;
   text-transform: uppercase;
 }
@@ -209,6 +218,24 @@ margin-bottom: 50px;
 
 .main-text img {
   position: absolute;
-  top: 1930px;
-  right: 635px;
+  top: 1965px;
+  right: 335px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+.reviews h3 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+section {
+  padding: 20px 0 20px 0;
 }
