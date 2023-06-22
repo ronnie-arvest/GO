@@ -80,7 +80,7 @@ a:hover {
   text-transform: uppercase;
 }
 
-.img-halls-one {
+.halls__item {
   position: relative;
   width: 100%;
   height: 710px;
@@ -89,7 +89,7 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.img-halls-one h2 {
+.halls__name {
   position: absolute;
   width: 211px;
   height: 160px;
@@ -112,13 +112,13 @@ a:hover {
   line-height: 50px;
 }
 
-.text-about-p {
+.about__us-text-b {
   font-size: 42px;
   line-height: 50px;
   text-transform: uppercase;
 }
 
-.text-about-p:before {
+.about__us-text-b:before {
   font-size: 70px;
   line-height: 50px;
   text-transform: uppercase;
@@ -126,7 +126,7 @@ a:hover {
   color: #6C0287;
 }
 
-.text-about-p:after {
+.about__us-text-b:after {
   font-size: 70px;
   line-height: 50px;
   text-transform: uppercase;
@@ -192,7 +192,7 @@ margin-bottom: 50px;
   padding-right: 20px;
 }
 
-.social img {
+.footer__item {
   margin-right: 20px;
 }
 
@@ -238,4 +238,15 @@ margin-bottom: 50px;
 
 section {
   padding: 20px 0 20px 0;
+}
+
+.footer__title {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+.footer__list {
+  display: flex;
 }

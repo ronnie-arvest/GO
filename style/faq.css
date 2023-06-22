@@ -1,4 +1,4 @@
-.element {
+.faq__element {
   background-color: #fff;
   color: #1C1A1A;
   font-weight: 700;
@@ -8,13 +8,13 @@
   position: relative;
 }
 
-.element:nth-child(even) {
+.faq__element:nth-child(even) {
   background-color: #440F51;
   color: #fff;
   list-style-type: none;
 }
 
-.element:nth-child(even):after {
+.faq__element:nth-child(even):after {
   content: url(/img/open.svg);
   width: 46px;
   height: 46px;
@@ -23,7 +23,7 @@
   top: -10px;
 }
 
-.element:nth-child(odd):after {
+.faq__element:nth-child(odd):after {
   content: url(/img/open-purple.svg);
   width: 46px;
   height: 46px;
@@ -32,6 +32,40 @@
   top: -10px;
 }
 
-.element:last-child {
+.faq__element:last-child {
   margin-bottom: 0;
+}
+
+.reviews__item {
+  list-style-type: none;
+}
+
+.footer__item-adress {
+  margin-bottom: 20px;
+}
+
+.footer__img-location {
+  margin-right: 15px;
+}
+
+.footer__list-item {
+  margin-right: 15px;
+}
+
+.footer__img-item {
+  padding-right: 15px;
+}
+
+.footer__list-email {
+  margin-bottom: 20px;
+}
+
+.social {
+  display: flex;
+  gap: 1.75rem;
+  margin: 35px 0;
+}
+
+.footer__item-p {
+  font-size: 20px;
 }
