@@ -35,37 +35,3 @@
 .faq__element:last-child {
   margin-bottom: 0;
 }
-
-.reviews__item {
-  list-style-type: none;
-}
-
-.footer__item-adress {
-  margin-bottom: 20px;
-}
-
-.footer__img-location {
-  margin-right: 15px;
-}
-
-.footer__list-item {
-  margin-right: 15px;
-}
-
-.footer__img-item {
-  padding-right: 15px;
-}
-
-.footer__list-email {
-  margin-bottom: 20px;
-}
-
-.social {
-  display: flex;
-  gap: 1.75rem;
-  margin: 35px 0;
-}
-
-.footer__item-p {
-  font-size: 20px;
-}

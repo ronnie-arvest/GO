@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="/style/normalize.css">
   <title>Game Over – место незабываемых впечатлений</title>
   </head>
-  <div class="container">
+
   <body>
+    <div class="container">
     <header class="header">
       <img src="img/logo.svg" alt="Логотип GO" height="66" class="logo">
       <h1 class="header__title">Меню</h1>
@@ -24,6 +25,7 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="advantages">
         <h2 class="advantages__title">У нас есть всё для классного отдыха с друзьями!</h2>
@@ -57,7 +59,7 @@
         </div>
       </section>
       
-      <section class="main__section">
+      <section class="main-text">
         <div class="main-text">
           <h2 class="main-text__title">Game Over</h2>
           <blockquote class="main-text__quote">Новый формат игр и отдыха</blockquote>
@@ -103,70 +105,70 @@
           <label for="rooms_4">Neon style</label>
         </fieldset>
 
-        <fieldset class="form">
-          <legend class="form__title">Собери набор развлечений</legend>
-            <fieldset class="form__fieldset">
-                <legend class="form__legend">Приставка</legend>
-                <input type="radio" name="console" id="console_1" value="Playstation" class="form__radio-input">
-                <label for="console_1" class="form__radio-label">Playstation</label>
-                <input type="radio" name="console" id="console_2" value="Sega Mega Drive" class="form__radio-input">
-                <label for="console_2" class="form__radio-label">Sega Mega Drive</label>
-                <input type="radio" name="console" id="console_3" value="X-box One S" class="form__radio-input">
-                <label for="console_3" class="form__radio-label">X-box One S</label>
-                <input type="radio" name="console" id="console_4" value="Dendy" class="form__radio-input">
-                <label for="console_4" class="form__radio-label">Dendy</label>
+        <fieldset class="custom-form">
+          <legend class="custom-form__title">Собери набор развлечений</legend>
+            <fieldset class="custom-form__fieldset">
+                <legend class="custom-form__legend">Приставка</legend>
+                <input type="radio" name="console" id="console_1" value="Playstation" class="custom-form__radio-input">
+                <label for="console_1" class="custom-form__radio-label">Playstation</label>
+                <input type="radio" name="console" id="console_2" value="Sega Mega Drive" class="custom-form__radio-input">
+                <label for="console_2" class="custom-form__radio-label">Sega Mega Drive</label>
+                <input type="radio" name="console" id="console_3" value="X-box One S" class="custom-form__radio-input">
+                <label for="console_3" class="custom-form__radio-label">X-box One S</label>
+                <input type="radio" name="console" id="console_4" value="Dendy" class="custom-form__radio-input">
+                <label for="console_4" class="custom-form__radio-label">Dendy</label>
             </fieldset>
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Настольные игры</legend>
-                <input type="checkbox" name="board_games" id="board_games_1" value="Jenga" class="form__checkbox-input">
-                <label for="board_games_1" class="form__checkbox-label">Jenga</label>
-                <input type="checkbox" name="board_games" id="board_games_2" value="Monopoly" class="form__checkbox-input">
-                <label for="board_games_2" class="form__checkbox-label">Monopoly</label>
-                <input type="checkbox" name="board_games" id="board_games_3" value="Munchkin" class="form__checkbox-input">
-                <label for="board_games_3" class="form__checkbox-label">Манчкин</label>
-                <input type="checkbox" name="board_games" id="board_games_4" value="Alias" class="form__checkbox-input">
-                <label for="board_games_4" class="form__checkbox-label">Alias</label>
+            <fieldset class="custom-form__fieldset">
+              <legend class="custom-form__legend">Настольные игры</legend>
+                <input type="checkbox" name="board_games" id="board_games_1" value="Jenga" class="custom-form__checkbox-input">
+                <label for="board_games_1" class="custom-form__checkbox-label">Jenga</label>
+                <input type="checkbox" name="board_games" id="board_games_2" value="Monopoly" class="custom-form__checkbox-input">
+                <label for="board_games_2" class="custom-form__checkbox-label">Monopoly</label>
+                <input type="checkbox" name="board_games" id="board_games_3" value="Munchkin" class="custom-form__checkbox-input">
+                <label for="board_games_3" class="custom-form__checkbox-label">Манчкин</label>
+                <input type="checkbox" name="board_games" id="board_games_4" value="Alias" class="custom-form__checkbox-input">
+                <label for="board_games_4" class="custom-form__checkbox-label">Alias</label>
             </fieldset>
-
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Дополнительно</legend>
-              <input type="checkbox" name="additionally" id="additionally_1" value="Karaoke" class="form__checkbox-input">
-              <label for="additionally_1" class="form__checkbox-label">Караоке</label>
-              <input type="checkbox" name="additionally" id="additionally_2" value="VR" class="form__checkbox-input">
-              <label for="additionally_2" class="form__checkbox-label">VR</label>
-            </fieldset>
-            </fieldset>
-            
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Выбери дату и время</legend>
-              <label for="date" class="form__label">Дата<sup>*</sup></label>
-              <input type="date" name="date" id="date" required class="form__input">
-              <label for="time" class="form__label">Время<sup>*</sup></label>
-              <input type="time" name="time" id="time" required class="form__input">
-              <label for="people" class="form__label">Количество человек<sup>*</sup></label>
-              <select name="people" id="people" class="form__select">
-                <option value="1">1 человек</option>
-                <option value="2">2 человека</option>
-                <option value="3">3 человека</option>
-                <option value="4">4 человека</option>
-                <option value="5">5 человек</option>
-              </select>
+        </fieldset>
+        <fieldset class="custom-form">
+          <legend class="custom-form__legend">Дополнительно</legend>
+          <input type="checkbox" name="additionally" id="additionally_1" value="Karaoke" class="custom-form__checkbox-input">
+          <label for="additionally_1" class="custom-form__checkbox-label">Караоке</label>
+          <input type="checkbox" name="additionally" id="additionally_2" value="VR" class="custom-form__checkbox-input">
+          <label for="additionally_2" class="custom-form__checkbox-label">VR</label>
+        </fieldset>
+        
+        <fieldset class="check-form">
+          <legend class="check-form__legend">Выбери дату и время</legend>
+          <label for="date" class="check-form__label">Дата<sup>*</sup></label>
+          <input type="date" name="date" id="date" required class="check-form__input">
+          <label for="time" class="check-form__label">Время<sup>*</sup></label>
+          <input type="time" name="time" id="time" required class="check-form__input">
+          <label for="people" class="check-form__label">Количество человек<sup>*</sup></label>
+          <select name="people" id="people" class="check-form__select">
+            <option value="1">1 человек</option>
+            <option value="2">2 человека</option>
+            <option value="3">3 человека</option>
+            <option value="4">4 человека</option>
+            <option value="5">5 человек</option>
+          </select>
 
               <label for="firstname">Имя<sup>*</sup></label>
-              <input type="text" name="firstname" id="firstname" required class="form__input">
-              <label for="lastname" class="form__label">Фамилия<sup>*</sup></label>
-              <input type="text" name="lastname" id="lastname" required class="form__input">
-              <label for="tel" class="form__label">Номер телефона<sup>*</sup></label>
+              <input type="text" name="firstname" id="firstname" required class="check-form__input">
+              <label for="lastname" class="check-form__label">Фамилия<sup>*</sup></label>
+              <input type="text" name="lastname" id="lastname" required class="check-form__input">
+              <label for="tel" class="check-form__label">Номер телефона<sup>*</sup></label>
               <input type="tel" name="tel" id="tel" required>
-              <label for="email" class="form__label">E-mail<sup>*</sup></label>
-              <input type="email" name="email" id="email" required class="form__input">
-              <input type="checkbox" name="ageconfirm" id="ageconfirm" required class="form__input">
-              <label for="ageconfirm" class="form__checkbox-label">Я старше 18 лет</label>
+              <label for="email" class="check-form__label">E-mail<sup>*</sup></label>
+              <input type="email" name="email" id="email" required class="check-form__input">
+              <input type="checkbox" name="ageconfirm" id="ageconfirm" required class="check-form__input">
+              <label for="ageconfirm" class="check-form__checkbox-label">Я старше 18 лет</label>
             </fieldset>
-            <br>            
-            <button type="submit" class="form__submit-btn">Забронировать</button>
-            <input type="checkbox" name="policy"id="policy" required class="form__checkbox-input">
-            <label for="policy" class="form__checkbox-label">Согласен на обработку данных</label>
+          </fieldset>
+            <br>
+            <button type="submit" class="check-form-button">Забронировать</button>
+            <input type="checkbox" name="policy" id="policy" required class="checkbox-input">
+            <label for="policy" class="checkbox-label">Согласен на обработку данных</label>
         </form>
       </section>
 
@@ -192,17 +194,17 @@
         <h3 id="reviews">Отзывы</h3>
         <ul class="reviews__list">
           <li class="reviews__item">
-            <img src="" alt="">
+            <img src="#" alt="">
             <p class="reviews__item-text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
-            <cite class="reviews__name">Макс Самойлов</сite>
+            <cite class="reviews__name">Макс Самойлов</cite>
           </li>
           <li class="reviews__item">
-            <img src="" alt="">
+            <img src="#" alt="">
             <p class="reviews__item-text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
             <cite class="reviews__name">Оксана Григорьева</cite>
           </li>
           <li class="reviews__item">
-            <img src="" alt="">
+            <img src="#" alt="">
             <p class="reviews__item-text">Немного подвисла игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса.</p>
             <cite class="reviews__name">Никита Ященко</cite>
           </li>
@@ -243,15 +245,15 @@
       </div>
       <div class="footer__social">
         <ul class="social">
-          <li class="social__item"><a class="social__link" href="#" class="social__link social__link-vk"><img src="/img/entypo-social_vk-with-circle.svg" alt="ВКонтакте" ></a></li>
-          <li class="social__item"><a class="social__link" href="#" class="social__link social__link-tg"><img src="/img/bi_telegram.svg" alt="Телеграмм" ></a></li>
-          <li class="social__item"><a class="social__link" href="#" class="social__link social__link-pn"><img src="/img/foundation_social-pinterest.svg" alt="Pinterest" ></a></li>
-          <li class="social__item"><a class="social__link" href="#" class="social__link social__link-stm"><img src="/img/foundation_social-stumbleupon.svg" alt="Stumbleupon" ></a></li>
+          <li class="social__item"><a href="#" class="social__link-vk"><img src="/img/entypo-social_vk-with-circle.svg" alt="ВКонтакте" ></a></li>
+          <li class="social__item"><a href="#" class="social__link-tg"><img src="/img/bi_telegram.svg" alt="Телеграмм" ></a></li>
+          <li class="social__item"><a href="#" class="social__link-pn"><img src="/img/foundation_social-pinterest.svg" alt="Pinterest" ></a></li>
+          <li class="social__item"><a href="#" class="social__link-stm"><img src="/img/foundation_social-stumbleupon.svg" alt="Stumbleupon" ></a></li>
         </ul>
       </div>
     </div>
     </footer>
-
+    </div>
   </body>
-</div>
+
 </html>
