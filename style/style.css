@@ -59,7 +59,7 @@ iframe {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   padding: 0 30px;
   margin: 0 auto;
 }
@@ -70,7 +70,16 @@ a:hover {
 }
 
 .halls {
-  padding: 20px;
+
+}
+
+.halls__list {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.halls__image {
+  width: 580px;
 }
 
 .halls h3 {
@@ -80,25 +89,46 @@ a:hover {
   text-transform: uppercase;
 }
 
-.halls__item {
+/* .halls__item {
   position: relative;
   width: 100%;
-  height: 710px;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 20px;
+} */
+
+.halls__item {
+  height: 349px;
+  position: relative;
+  float: left;
+  vertical-align: top;
+
 }
 
-.halls__name {
+.halls__item:not(:nth-child(2n)) {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* .halls__name {
   position: absolute;
-  width: 211px;
-  height: 160px;
-  left: 40%;
-  top: 29%;
+  left: 18%;
+  top: 38%;
   text-align: center;
   color: #ffffff;
   font-size: 70px;
+
+} */
+
+.halls__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 70px;
+  transform: translate(-50%, -50%);
+  margin: 0;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .booking {
@@ -215,6 +245,7 @@ margin-bottom: 50px;
 .main-text {
   height: 920px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .main-text h2 {
