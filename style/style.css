@@ -112,6 +112,10 @@ a:hover {
   line-height: 50px;
 }
 
+.about__us {
+display: inline-block;
+}
+
 .about__us-text-b {
   font-size: 42px;
   line-height: 50px;
@@ -142,6 +146,7 @@ margin-bottom: 50px;
 .about-img {
   float: left;
   margin-right: 20px;
+  max-width: 100%;
 }
 
 .about-p {
