@@ -116,10 +116,21 @@ a:hover {
 display: inline-block;
 }
 
+.about__us-image-main {
+  float: left;
+  margin-right: 80px;
+}
+
+.about__us-text {
+  padding: 0;
+}
+
 .about__us-text-b {
   font-size: 42px;
   line-height: 50px;
   text-transform: uppercase;
+  padding-left: 665px;
+  text-indent: -25px;
 }
 
 .about__us-text-b:before {
