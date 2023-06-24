@@ -331,3 +331,47 @@ section {
 .footer__item-p {
   font-size: 20px;
 }
+
+.reviews__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviews__item {
+  position: relative;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.reviews__item-text {
+  width: 680px;
+  position: absolute;
+  top: 50px;
+}
+
+.reviews__content {
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
+.reviews__image {
+  float: left;
+  width: 280px;
+  height: 280px;
+  margin-right: 20px; 
+  border: none;
+  border-radius: 50%;
+}
+
+.reviews__text {
+  overflow: hidden;
+}
+
+.reviews__name {
+  position: absolute;
+  top: 300px;
+  left: 70px;
+}
+
+
