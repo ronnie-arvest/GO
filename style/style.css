@@ -69,9 +69,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.halls {
-
-}
 
 .halls__list {
   display: inline-block;
@@ -83,7 +80,7 @@ a:hover {
 }
 
 .halls h3 {
-  padding-bottom: 20px;
+  margin: 40px 0;
   text-align: center;
   font-size: 40px;
   text-transform: uppercase;
@@ -97,12 +94,66 @@ a:hover {
   margin-bottom: 20px;
 } */
 
+.halls__name-one {
+  background-image: url('/img/80\'s-vibe.jpg');
+  width: 580px;
+  height: 349px;
+  text-align: center;
+  font-size: 72px;
+  background-size: cover;
+  background-position: center;
+  line-height: 340px;
+  text-transform: uppercase;
+}
+
+.halls__name-two {
+  background-image: url(/img/star_wars.jpg);
+  width: 580px;
+  height: 349px;
+  text-align: center;
+  font-size: 72px;
+  background-size: cover;
+  background-position: center;
+  line-height: 340px;
+  text-transform: uppercase;
+}
+
+.halls__name-three {
+    background-image: url(/img/wild_west.jpg);
+    width: 580px;
+    height: 349px;
+    text-align: center;
+    font-size: 72px;
+    background-size: cover;
+    background-position: center;
+    line-height: 340px;
+    text-transform: uppercase;
+  }
+
+  .halls__name-four {
+    background-image: url(/img/neon_style.jpg);
+    width: 580px;
+    height: 349px;
+    text-align: center;
+    font-size: 72px;
+    background-size: cover;
+    background-position: center;
+    line-height: 340px;
+    text-transform: uppercase;
+  }
+
+.halls__item-one {
+  height: 349px;
+  position: relative;
+  float: left;
+  vertical-align: top;
+}
+
 .halls__item {
   height: 349px;
   position: relative;
   float: left;
   vertical-align: top;
-
 }
 
 .halls__item:not(:nth-child(2n)) {
@@ -152,6 +203,7 @@ display: inline-block;
 }
 
 .about__us-text {
+  margin: 0;
   padding: 0;
 }
 
@@ -245,7 +297,6 @@ margin-bottom: 50px;
 .main-text {
   height: 920px;
   padding: 20px;
-  margin-bottom: 20px;
 }
 
 .main-text h2 {
@@ -265,7 +316,7 @@ margin-bottom: 50px;
 
 .main-text img {
   position: absolute;
-  top: 1965px;
+  top: 135px;
   right: 335px;
 }
 
@@ -303,6 +354,7 @@ section {
 }
 
 .footer__item-adress {
+  display: -webkit-inline-box;
   margin-bottom: 20px;
 }
 
@@ -324,7 +376,7 @@ section {
 
 .social {
   display: flex;
-  gap: 1.75rem;
+  ga : 1.75rem;
   margin: 35px 0;
 }
 
@@ -369,9 +421,5 @@ section {
 }
 
 .reviews__name {
-  position: absolute;
-  top: 300px;
-  left: 70px;
+  float: left;
 }
-
-
