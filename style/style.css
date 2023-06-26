@@ -376,7 +376,7 @@ section {
 
 .social {
   display: flex;
-  ga : 1.75rem;
+  gap : 1.75rem;
   margin: 35px 0;
 }
 
@@ -404,11 +404,11 @@ section {
 
 .reviews__content {
   overflow: hidden;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .reviews__image {
-  float: left;
+    float: left;
   width: 280px;
   height: 280px;
   margin-right: 20px; 
@@ -422,4 +422,5 @@ section {
 
 .reviews__name {
   float: left;
+  margin-left: 80px;
 }
