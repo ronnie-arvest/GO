@@ -95,7 +95,7 @@ a:hover {
 } */
 
 .halls__name-one {
-  background-image: url('/img/80\'s-vibe.jpg');
+  background-image: url("../GO/img/80s-vibe.jpg");
   width: 580px;
   height: 349px;
   text-align: center;
@@ -107,7 +107,7 @@ a:hover {
 }
 
 .halls__name-two {
-  background-image: url(/img/star_wars.jpg);
+  background-image: url(../GO/img/star_wars.jpg);
   width: 580px;
   height: 349px;
   text-align: center;
@@ -119,7 +119,7 @@ a:hover {
 }
 
 .halls__name-three {
-    background-image: url(/img/wild_west.jpg);
+    background-image: url(../GO/img/wild_west.jpg);
     width: 580px;
     height: 349px;
     text-align: center;
@@ -131,7 +131,7 @@ a:hover {
   }
 
   .halls__name-four {
-    background-image: url(/img/neon_style.jpg);
+    background-image: url(../GO/img/neon_style.jpg);
     width: 580px;
     height: 349px;
     text-align: center;
