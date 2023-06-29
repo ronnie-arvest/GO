@@ -1,0 +1,65 @@
+.wehave__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.wehave__text-one {
+  background-image: url("../img/Rectangle_29.jpg");
+  background-repeat: no-repeat;
+  width: 380px;
+  height: 228px;
+  background-size: contain;
+  padding: 170px 0 35px 30px;
+  font-weight: bold;
+}
+
+.wehave__text-two {
+  background-image: url("../img/audio.jpg");
+  background-repeat: no-repeat;
+  width: 380px;
+  height: 228px;
+  background-size: contain;
+  padding: 170px 0 35px 30px;
+  font-weight: bold;
+}
+
+.wehave__text-three {
+  background-image: url("../img/micro.jpg");
+  background-repeat: no-repeat;
+  width: 380px;
+  height: 228px;
+  background-size: contain;
+  padding: 170px 0 35px 30px;
+  font-weight: bold;
+}
+
+.wehave__text-four {
+  background-image: url("../img/game.jpg");
+  background-repeat: no-repeat;
+  width: 380px;
+  height: 228px;
+  background-size: contain;
+  padding: 170px 0 35px 30px;
+  font-weight: bold;
+}
+
+.wehave__text-five {
+  background-image: url("../img/netflix.jpg");
+  background-repeat: no-repeat;
+  width: 380px;
+  height: 228px;
+  background-size: contain;
+  padding: 170px 0 35px 30px;
+  font-weight: bold;
+}
+
+.wehave__text-six {
+  background-image: url("../img/sony.jpg");
+  background-repeat: no-repeat;
+  width: 380px;
+  height: 228px;
+  background-size: contain;
+  padding: 170px 0 35px 30px;
+  font-weight: bold;
+}

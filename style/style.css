@@ -58,17 +58,23 @@ iframe {
   transform: scale(0);
 }
 
-.container {
-  max-width: 1240px;
-  padding: 0 30px;
-  margin: 0 auto;
-}
-
 a:hover {
   color: gainsboro;
   text-decoration: underline;
 }
 
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.second__title {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 980px;
+  margin: 0 auto 40px;
+}
 
 .halls__list {
   display: inline-block;
@@ -85,14 +91,6 @@ a:hover {
   font-size: 40px;
   text-transform: uppercase;
 }
-
-/* .halls__item {
-  position: relative;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-} */
 
 .halls__name-one {
   background-image: url("../img/80s-vibe.jpg");
@@ -161,16 +159,6 @@ a:hover {
   margin-bottom: 20px;
 }
 
-/* .halls__name {
-  position: absolute;
-  left: 18%;
-  top: 38%;
-  text-align: center;
-  color: #ffffff;
-  font-size: 70px;
-
-} */
-
 .halls__name {
   position: absolute;
   top: 50%;
@@ -182,8 +170,8 @@ a:hover {
   white-space: nowrap;
 }
 
-.booking {
-  width: 100%;
+.booking__container {
+  width: 1440px;
 }
 
 .about h3 {
@@ -294,31 +282,7 @@ margin-bottom: 50px;
   margin-right: 20px;
 }
 
-.main-text {
-  height: 920px;
-  padding: 20px;
-}
 
-.main-text h2 {
-  font-size: 150px;
-  text-transform: uppercase;
-  letter-spacing: -0.1em;
-  text-align: left;
-  font-weight: 900;
-  margin-bottom: 0;
-}
-
-.main-text blockquote {
-  text-align: left;
-  margin-left: 100px;
-  margin-top: 0;
-}
-
-.main-text img {
-  position: absolute;
-  top: 135px;
-  right: 335px;
-}
 
 .faq h2 {
   text-align: center;
@@ -381,7 +345,9 @@ section {
 }
 
 .footer__item-p {
-  font-size: 20px;
+  font-size: 24px;
+  width: 240px;
+  line-height: 28px;
 }
 
 .reviews__list {
@@ -423,4 +389,22 @@ section {
 .reviews__name {
   float: left;
   margin-left: 80px;
+}
+
+.footer {
+  background: linear-gradient(#1B1A1B, #370A37);
+}
+
+.madeby {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer__map {
+  float: right;
+  width: 680px;
+  height: auto;
 }
