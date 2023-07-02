@@ -35,3 +35,7 @@
 .faq__element:last-child {
   margin-bottom: 0;
 }
+
+.faq__list {
+  margin-bottom: 100px;
+}

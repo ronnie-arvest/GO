@@ -1,0 +1,281 @@
+.booking__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #440F51;
+}
+
+.second__title-m {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 980px;
+  margin: 0 auto 40px;
+  padding-top: 80px;
+}
+
+.section__container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.booking__p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.booking__fieldset {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.booking__input {
+  display: none;
+}
+
+/* input[type="checkbox"] {
+  display: none;
+} */
+
+.booking__label {
+  text-align: center;
+  flex-basis: 250px;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 7px 15px;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.booking__label:active {
+  background-color: rgb(255, 65, 214);
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: transparent;
+}
+
+.booking__game {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.custom-form {
+  border: none;
+}
+
+.custom-form__text {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* .custom-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.custom-form__fieldset {
+  display: flex;
+}
+
+.custom-form__enter {
+
+} */
+
+.custom-form__enter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.custom-form__fieldset {
+  display: flex;
+  flex-basis: 280px;
+  gap: 21px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  border: none;
+}
+
+.custom-form__legend {
+  text-transform: none;
+}
+
+.custom-form__radio-label {
+  font-size: 22px;
+  text-transform: none;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.custom-form__radio-input {
+  display: none;
+}
+
+.custom-form__radio-input:checked,
+.custom-form__checkbox-input:checked {
+  background-color: rgb(255, 255, 255);
+}
+
+.custom-form__radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 27px;
+  height: 27px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.custom-form__radio-input:checked + .custom-form__radio-label::before {
+  background-color: rgb(255, 65, 214);
+}
+
+.custom-form__checkbox-input:checked:after {
+  opacity: 1;
+}
+
+.custom-form__checkbox-input {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.custom-form__checkbox-input:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #F4F2FF;
+}
+
+.custom-form__checkbox-input:after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -27px;
+  width: 20px;
+  height: 10px;
+  border: 3px solid black;
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+.check-form {
+  border: none;
+  width: 100%;
+}
+
+.date__date {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 300px;
+  column-gap: 22px;
+  row-gap: 13px;
+  margin-top: 20px;
+}
+
+.date__text {
+  position: relative;
+  font-size: 18px;
+  padding: 12px 70px 12px 20px;
+  background-color: #fff;
+  color: black;
+  flex: 1 0 auto;
+}
+
+.date__data {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.date__text::after {
+  background-image: url("../img/Polygon_1.svg");
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 26px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 13px;
+  background-size: cover;
+}
+
+.date__text-n {
+  position: relative;
+  flex-basis: 100%;
+  font-size: 18px;
+  padding: 12px 70px 12px 20px;
+  width: 300px;
+  background-color: #fff;
+  color: black;
+}
+
+.date__date-n {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  max-height: 170px;
+  column-gap: 20px;
+}
+
+.date__text-n::after {
+  background-image: url("../img/Polygon_1.svg");
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 26px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 13px;
+  background-size: cover;
+}
+
+.check-form__input {
+  width: 300px;
+  height: 48px;
+  margin-bottom: 18px;
+}
+
+.check-form__label {
+  font-size: 14px;
+}
+
+.date__button {
+  float: right;
+  width: 300px;
+  margin-right: 72px;
+  background-color: #fff;
+  padding: 16px 50px;
+  text-align: center;
+  color: #6C0287;
+  border-radius: 8px;
+}
+
+.check-form-button {
+  color: #6C0287;
+  font-size: 22px;
+  text-transform: uppercase;
+}

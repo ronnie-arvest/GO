@@ -1,6 +1,5 @@
 .banner__container {
   position: relative;
-  display: flex;
   margin-bottom: 40px;
 }
 
@@ -81,4 +80,20 @@
   height: auto;
   left: 400px;
   top: 90px;
+}
+
+.banner__svg {
+  position: absolute;
+  top: 84%;
+  left: 47%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.banner__svg:hover {
+  fill: #fff;
+}
+
+.banner__svg:hover rect {
+  fill: #6C0287;
 }

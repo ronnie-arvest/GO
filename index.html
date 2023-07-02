@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+  
   <header class="header">
     <div class="container header__container">
       <svg width="120" height="66" viewBox="0 0 120 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,6 +43,12 @@
   <section class="banner">
     <div class="container banner__container">
         <div class="banner__content">
+          <svg class="banner__svg" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
+            <rect class="banner__rect" x="34.4255" y="43.9161" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9161)" fill="white"/>
+            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white"/>
+            </svg>
+            
           <h2 class="banner__title">Game Over</h2>
           <blockquote class="banner__quote">Новый формат игр и отдыха</blockquote>
         <div class="banner__items">
@@ -113,11 +119,15 @@
     </nav>
 
     <section class="booking">
-      <div class="container booking__container">
-      <h2 class="second__title" id="booking">Забронировать зал просто</h2>
+      <div class="booking__container">
+        <div class="section__container">
+      <h2 class="second__title-m" id="booking">Забронировать зал просто</h2>
+      
       <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+
+        <div class="booking__hall">
+          <p class="booking__p">Выбери зал</p>
         <fieldset class="booking__fieldset">
-          <legend class="booking__legend">Выбери зал</legend>
           <input class="booking__input" type="radio" name="rooms" id="rooms_1" value="80's vibes">
           <label class="booking__label" for="rooms_1">80's vibes</label>
           <input class="booking__input" type="radio" name="rooms" id="rooms_2" value="Star wars">
@@ -127,71 +137,111 @@
           <input class="booking__input" type="radio" name="rooms" id="rooms_4" value="Neon style">
           <label class="booking__label" for="rooms_4">Neon style</label>
         </fieldset>
+        </div>
+
+        <div class="booking__game">
+          <p class="custom-form__text">Собери набор развлечений</p>
         <fieldset class="custom-form">
-          <legend class="custom-form__title">Собери набор развлечений</legend>
+          
+
+          <div class="custom-form__enter">
+            
           <fieldset class="custom-form__fieldset">
-            <legend class="custom-form__legend">Приставка</legend>
+            <p class="custom-form__legend">Приставка:</p>
+
+            <div class="custom-form__play">
             <input type="radio" name="console" id="console_1" value="Playstation" class="custom-form__radio-input">
             <label for="console_1" class="custom-form__radio-label">Playstation</label>
+            </div>
+            <div class="custom-form__sega">
             <input type="radio" name="console" id="console_2" value="Sega Mega Drive" class="custom-form__radio-input">
             <label for="console_2" class="custom-form__radio-label">Sega Mega Drive</label>
+            </div>
+            <div class="custom-form__xbox">
             <input type="radio" name="console" id="console_3" value="X-box One S" class="custom-form__radio-input">
             <label for="console_3" class="custom-form__radio-label">X-box One S</label>
+            </div>
+            <div class="custom-form__dendy">
             <input type="radio" name="console" id="console_4" value="Dendy" class="custom-form__radio-input">
             <label for="console_4" class="custom-form__radio-label">Dendy</label>
+            </div>
           </fieldset>
+
+            <fieldset class="custom-form__fieldset">
+
+              <p class="custom-form__legend">Настольные игры</p>
+              <div class="custom-form__jenga">
+              <input type="checkbox" name="board_games" id="board_games_1" value="Jenga" class="custom-form__checkbox-input">
+              <label for="board_games_1" class="custom-form__checkbox-label">Jenga</label>
+              </div>
+              <div class="custom-form__monopoly">
+              <input type="checkbox" name="board_games" id="board_games_2" value="Monopoly" class="custom-form__checkbox-input">
+              <label for="board_games_2" class="custom-form__checkbox-label">Monopoly</label>
+              </div>
+              <div class="custom-form__munchkin">
+              <input type="checkbox" name="board_games" id="board_games_3" value="Munchkin" class="custom-form__checkbox-input">
+              <label for="board_games_3" class="custom-form__checkbox-label">Манчкин</label>
+              </div>
+              <div class="custom-form__alias">
+              <input type="checkbox" name="board_games" id="board_games_4" value="Alias" class="custom-form__checkbox-input">
+              <label for="board_games_4" class="custom-form__checkbox-label">Alias</label>
+              </div>
+            </fieldset>
+
           <fieldset class="custom-form__fieldset">
-            <legend class="custom-form__legend">Настольные игры</legend>
-            <input type="checkbox" name="board_games" id="board_games_1" value="Jenga" class="custom-form__checkbox-input">
-            <label for="board_games_1" class="custom-form__checkbox-label">Jenga</label>
-            <input type="checkbox" name="board_games" id="board_games_2" value="Monopoly" class="custom-form__checkbox-input">
-            <label for="board_games_2" class="custom-form__checkbox-label">Monopoly</label>
-            <input type="checkbox" name="board_games" id="board_games_3" value="Munchkin" class="custom-form__checkbox-input">
-            <label for="board_games_3" class="custom-form__checkbox-label">Манчкин</label>
-            <input type="checkbox" name="board_games" id="board_games_4" value="Alias" class="custom-form__checkbox-input">
-            <label for="board_games_4" class="custom-form__checkbox-label">Alias</label>
+            <p class="custom-form__legend">Дополнительно</p>
+            <div class="custom-form__karaoke">
+            <input type="checkbox" name="additionally" id="additionally_1" value="Karaoke" class="custom-form__checkbox-input">
+            <label for="additionally_1" class="custom-form__checkbox-label">Караоке</label>
+            </div>
+            <div class="custom-form__vr">
+            <input type="checkbox" name="additionally" id="additionally_2" value="VR" class="custom-form__checkbox-input">
+            <label for="additionally_2" class="custom-form__checkbox-label">VR</label>
+            </div>
           </fieldset>
         </fieldset>
-        <fieldset class="custom-form">
-          <legend class="custom-form__legend">Дополнительно</legend>
-          <input type="checkbox" name="additionally" id="additionally_1" value="Karaoke" class="custom-form__checkbox-input">
-          <label for="additionally_1" class="custom-form__checkbox-label">Караоке</label>
-          <input type="checkbox" name="additionally" id="additionally_2" value="VR" class="custom-form__checkbox-input">
-          <label for="additionally_2" class="custom-form__checkbox-label">VR</label>
-        </fieldset>
+        </div>
+
+        <div class="date__date">
         <fieldset class="check-form">
-          <legend class="check-form__legend">Выбери дату и время</legend>
-          <label for="date" class="check-form__label">Дата<sup class="check-form__sup">*</sup></label>
-          <input type="date" name="date" id="date" required class="check-form__input">
-          <label for="time" class="check-form__label">Время<sup class="check-form__sup">*</sup></label>
-          <input type="time" name="time" id="time" required class="check-form__input">
-          <label for="people" class="check-form__label">Количество человек<sup class="check-form__sup">*</sup></label>
-          <select name="people" id="people" class="check-form__select">
-            <option class="check-form__option" value="1">1 человек</option>
-            <option class="check-form__option" value="2">2 человека</option>
-            <option class="check-form__option" value="3">3 человека</option>
-            <option class="check-form__option" value="4">4 человека</option>
-            <option class="check-form__option" value="5">5 человек</option>
-          </select>
-          <label class="check-form__label" for="firstname">Имя<sup class="check-form__sup">*</sup></label>
-          <input type="text" name="firstname" id="firstname" required class="check-form__input">
-          <label for="lastname" class="check-form__label">Фамилия<sup class="check-form__sup">*</sup></label>
+          <p class="custom-form__text">Выбери дату и время</p>
+
+          <div class="date__data">
+
+            <div class="date__date">
+            <p class="date__text">Дата </p>
+            <p class="date__text">Время</p>
+            <p class="date__text-n">Сколько человек</p>
+            </div>
+
+          <div class="date__date-n">
+          <label for="name" class="check-form__label">Имя</label>
           <input type="text" name="lastname" id="lastname" required class="check-form__input">
-          <label for="tel" class="check-form__label">Номер телефона<sup class="check-form__sup">*</sup></label>
-          <input type="tel" name="tel" id="tel" required>
-          <label for="email" class="check-form__label">E-mail<sup class="check-form__sup">*</sup></label>
+          <label for="lastname" class="check-form__label">Фамилия</label>
+          <input type="text" name="lastname" id="lastname" required class="check-form__input">
+          <label for="tel" class="check-form__label">Номер телефона</label>
+          <input type="tel" name="tel" id="tel" required class="check-form__input">
+          <label for="email" class="check-form__label">E-mail</label>
           <input type="email" name="email" id="email" required class="check-form__input">
-          <input type="checkbox" name="ageconfirm" id="ageconfirm" required class="check-form__input">
-          <label for="ageconfirm" class="check-form__checkbox-label">Я старше 18 лет</label>
+          </div>
+          </div>
+          <!-- <input type="checkbox" name="ageconfirm" id="ageconfirm" required class="check-form__input">
+          <label for="ageconfirm" class="check-form__checkbox-label">Я старше 18 лет</label> -->
+          <div class="date__button">
+          <button type="submit" class="check-form-button">Забронировать</button>
+          </div>
+          </div>
+
+          <!-- <input type="checkbox" name="policy" id="policy" required class="checkbox-input">
+          <label for="policy" class="checkbox-label">Согласен на обработку данных</label> -->
         </fieldset>
-        <br>
-        <button type="submit" class="check-form-button">Забронировать</button>
-        <input type="checkbox" name="policy" id="policy" required class="checkbox-input">
-        <label for="policy" class="checkbox-label">Согласен на обработку данных</label>
       </form>
+      </div>
+        </div>
+
+
+      </div>
       </section>
-    </div>
-    </section>
 
     <section class="about">
       <div class="container">
@@ -216,7 +266,7 @@
 
     <section class="reviews">
       <div class="container">
-        <h3 class="reviews__title" id="reviews">Отзывы</h3>
+        <h3 class="reviews__title" id="reviews">Отзывы посетителей</h3>
         <ul class="reviews__list">
           <li class="reviews__item">
             <div class="reviews__content">
@@ -275,7 +325,7 @@
         <div class="footer__list-two">
           <div class="footer__list-phone">
             <img class="footer__img-item" src="../img/bx_bxs-phone-call.svg" alt="Телефон">
-            <span class="footer__item-p"><a class="footer__link-list" href="tel:89509302893">8(950)930-28-93</a></span>
+            <span class="footer__item-p"><a class="footer__link-list" href="tel:89509302893">8 (950) 930 - 28 - 93</a></span>
           </div>
           <div class="footer__list-email">
             <img class="footer__img-item" src="../img/envelope.svg" alt="Почта">
@@ -335,10 +385,11 @@
           </li>
         </ul>
 
-        <div class="madeby">
-          <p class="footer__dtext">© Game Over, 2022</p>
-          <p class="footer__dtext">Design by Anastasia Ilina<br>ilina9825@gmail.com</p>
-        </div>
+
+      </div>
+      <div class="container madeby">
+        <p class="footer__dtext">© Game Over, 2022</p>
+        <p class="footer__dtext">Design by Anastasia Ilina<br>ilina9825@gmail.com</p>
       </div>
     </footer>
   </div>
