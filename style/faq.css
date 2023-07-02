@@ -6,6 +6,7 @@
   padding: 30px 70px;
   margin-bottom: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .faq__element:nth-child(even) {
@@ -23,6 +24,14 @@
   top: -10px;
 }
 
+.faq__element:nth-child(even):hover::after {
+  background-image: url('../img/open_hover.svg');
+}
+
+.faq__element:nth-child(even):active::after{
+  background-image: url('../img/open_active.svg');
+}
+
 .faq__element:nth-child(odd):after {
   content: url("../img/open-purple.svg");
   width: 46px;
@@ -30,6 +39,14 @@
   position: relative;
   float: right;
   top: -10px;
+}
+
+.faq__element:nth-child(odd):hover::after {
+  background-image: url('../img/open__hover.png');
+}
+
+.faq__element:nth-child(odd)::after:active {
+  background-image: url('../img/open__hover.png');
 }
 
 .faq__element:last-child {

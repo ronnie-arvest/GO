@@ -47,13 +47,25 @@
   font-size: 30px;
   padding: 7px 15px;
   background-color: #ffffff;
-  color: #333;
-  border-radius: 4px;
+  color: #000;
+  border: 3px solid #fff;
   cursor: pointer;
+  border-radius: 8px;
+}
+
+.booking__label:hover {
+  border: 3px solid #640AA3;
+  background-color: #EADEED;
+}
+
+.booking__laber:focus {
+  background-color: #FFFFFF;
 }
 
 .booking__label:active {
-  background-color: rgb(255, 65, 214);
+  background-color: #6C0287;
+  color: #fff;
+  border: 3px solid #fff;
 }
 
 input[type="checkbox"]:checked + label {
@@ -117,6 +129,10 @@ input[type="checkbox"]:checked + label {
   position: relative;
   padding-left: 40px;
   cursor: pointer;
+}
+
+.custom-form__radio-label::before:focus {
+  border: 1px solid #CD06FF;
 }
 
 .custom-form__radio-input {
@@ -259,6 +275,10 @@ input[type="checkbox"]:checked + label {
   margin-bottom: 18px;
 }
 
+.check-form__input:focus {
+  border: 2px solid #CD06FF;
+}
+
 .check-form__label {
   font-size: 14px;
 }
@@ -267,15 +287,29 @@ input[type="checkbox"]:checked + label {
   float: right;
   width: 300px;
   margin-right: 72px;
-  background-color: #fff;
-  padding: 16px 50px;
-  text-align: center;
-  color: #6C0287;
-  border-radius: 8px;
 }
 
 .check-form-button {
   color: #6C0287;
   font-size: 22px;
   text-transform: uppercase;
+  background-color: #fff;
+  border: 3px solid #fff;
+  text-align: center;
+  padding: 16px 50px;
+  border-radius: 8px;
+}
+
+.check-form-button:hover {
+  background-color: #EADEED;
+  border: 3px solid #6C0287;
+}
+
+.check-form-button:focus {
+  background-color: #EADEED;
+}
+
+.check-form-button:active {
+  background-color: #fff;
+  border: 3px solid #6C0287;
 }
