@@ -63,6 +63,11 @@ a:hover {
   text-decoration: underline;
 }
 
+*:hover, *:focus, *:active {
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
 .container {
   max-width: 1180px;
   margin: 0 auto;

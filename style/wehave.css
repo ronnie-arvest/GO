@@ -12,6 +12,7 @@
   background-size: contain;
   padding: 170px 0 35px 30px;
   font-weight: bold;
+  transition: transform 0.3s ease;
 }
 
 .wehave__text-two {
@@ -22,6 +23,8 @@
   background-size: contain;
   padding: 170px 0 35px 30px;
   font-weight: bold;
+  transition: transform 0.3s ease;
+
 }
 
 .wehave__text-three {
@@ -32,6 +35,8 @@
   background-size: contain;
   padding: 170px 0 35px 30px;
   font-weight: bold;
+  transition: transform 0.3s ease;
+
 }
 
 .wehave__text-four {
@@ -42,6 +47,8 @@
   background-size: contain;
   padding: 170px 0 35px 30px;
   font-weight: bold;
+  transition: transform 0.3s ease;
+
 }
 
 .wehave__text-five {
@@ -52,6 +59,8 @@
   background-size: contain;
   padding: 170px 0 35px 30px;
   font-weight: bold;
+  transition: transform 0.3s ease;
+
 }
 
 .wehave__text-six {
@@ -62,4 +71,35 @@
   background-size: contain;
   padding: 170px 0 35px 30px;
   font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.wehave__text-one:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.wehave__text-two:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.wehave__text-three:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.wehave__text-four:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.wehave__text-five:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.wehave__text-six:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
