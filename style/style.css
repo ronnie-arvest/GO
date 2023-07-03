@@ -285,7 +285,9 @@ margin-bottom: 50px;
   margin-right: 20px;
 }
 
-
+.footer__link-b {
+  cursor: pointer;
+}
 
 .faq h2 {
   text-align: center;
