@@ -63,6 +63,11 @@ a:hover {
   text-decoration: underline;
 }
 
+*:hover, *:focus, *:active {
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
 .container {
   max-width: 1180px;
   margin: 0 auto;
@@ -86,19 +91,19 @@ a:hover {
   width: 580px;
 }
 
-.halls h3 {
-  margin: 40px 0;
+.halls__title {
+  margin-bottom: 20px;
   text-align: center;
   font-size: 40px;
   text-transform: uppercase;
 }
 
 .halls__name-one {
+  font-size: 72px;
   background-image: url("../img/80s-vibe.jpg");
   width: 580px;
   height: 349px;
   text-align: center;
-  font-size: 72px;
   background-size: cover;
   background-position: center;
   line-height: 340px;
