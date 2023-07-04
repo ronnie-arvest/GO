@@ -40,7 +40,7 @@
 .banner__span {
   font-size: 100px;
   font-weight: bold;
-  color: #CD06FF;
+  color: var(--banner-span-color);
 }
 
 .banner__text {
@@ -55,18 +55,18 @@
 
 .banner__link {
   padding: 25px 69px;
-  background-color: #6C0287;
+  background-color: var(--button-color);
   text-align: center;
   border-radius: 8px;
   margin-bottom: 165px;
-  color: #fff;
+  color: var(--main-color);
   font-size: 26px;
   text-transform: uppercase;
   line-height: 247px;
 }
 
 .banner__link:hover {
-  color: #fff;
+  color: var(--main-color);
   font-size: 26px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -97,22 +97,21 @@
 }
 
 .banner__svg:hover {
-  fill: #fff;
+  fill: var(--main-color);
 }
 
 .banner__svg:hover rect {
-  fill: #6C0287;
+  fill: var(--button-color);
 }
 
 .banner__svg:focus {
-  background-color: #CD06FF;
+  background-color: var(--banner-span-color);
 }
 
 .banner__svg:active circle{
-  fill: #CD06FF;
+  fill: var(--banner-span-color);
 }
 
 .banner__svg:active rect {
-  fill: white;
+  fill: var(--main-color);
 }
-

@@ -1,0 +1,62 @@
+.about h3 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+.about__us {
+display: inline-block;
+margin-bottom: 60px;
+}
+
+.about__us-image-main {
+  float: left;
+  margin-right: 80px;
+}
+
+.about__us-text {
+  margin: 0;
+  padding: 0;
+}
+
+.about__us-text-b {
+  font-size: 42px;
+  line-height: 50px;
+  text-transform: uppercase;
+  padding-left: 665px;
+  text-indent: -25px;
+}
+
+.about__us-text-b:before {
+  font-size: 70px;
+  line-height: 50px;
+  text-transform: uppercase;
+  content: '\201c';
+  color: var(--button-color);
+}
+
+.about__us-text-b:after {
+  font-size: 70px;
+  line-height: 50px;
+  text-transform: uppercase;
+  content: '\201d';
+  color: var(--button-color);
+}
+
+.about-cite {
+margin-left: 800px;
+margin-bottom: 50px;
+}
+
+.about-img {
+  float: left;
+  margin-right: 20px;
+  max-width: 100%;
+}
+
+.about-p {
+  width: 330px;
+  text-align: left;
+  line-height: 28px;
+}

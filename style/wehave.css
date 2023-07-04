@@ -25,7 +25,7 @@
   padding: 170px 0 35px 30px;
   font-weight: bold;
   transition: transform 0.3s ease;
-  transform: translate(0,70px)
+  /* transform: translate(0,70px) */
 }
 
 .wehave__text-three {
@@ -61,7 +61,7 @@
   padding: 170px 0 35px 30px;
   font-weight: bold;
   transition: transform 0.3s ease;
-  transform: translate(0,70px)
+  /* transform: translate(0,70px) */
 }
 
 .wehave__text-six {
