@@ -1,3 +1,8 @@
+.reviews__container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
 .reviews__list {
   list-style: none;
   padding: 0;
@@ -9,6 +14,7 @@
   font-size: 40px;
   text-transform: uppercase;
   line-height: 50px;
+  margin-bottom: 44px;
 }
 
 .reviews__item {
@@ -20,12 +26,14 @@
 .reviews__item-text {
   width: 680px;
   position: absolute;
-  top: 50px;
+  top: 55px;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .reviews__content {
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .reviews__image {
@@ -34,6 +42,26 @@
   width: 280px;
   height: 280px;
   margin-right: 20px; 
+  border: none;
+  border-radius: 50%;
+}
+
+.reviews__image-two {
+  position: relative;
+  float: left;
+  width: 280px;
+  height: 280px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 50%;
+}
+
+.reviews__image-three {
+  position: relative;
+  float: left;
+  width: 280px;
+  height: 280px;
+  margin-right: 20px;
   border: none;
   border-radius: 50%;
 }
@@ -57,13 +85,90 @@
 
 .reviews__name {
   float: left;
-  margin-left: 80px;
+  margin-left: 66px;
+  font-size: 20px;
+  margin-bottom: 50px;
 }
 
 .reviews {
-  margin-bottom: 60px;
+  margin-bottom: 81px;
 }
 
 .reviews__item {
   list-style-type: none;
+}
+
+@media (max-width: 1024px) {
+  .reviews {
+    max-width: 904px;
+    margin: 0 auto;
+  }
+
+  .reviews h3 {
+    font-size: 30px;
+  }
+
+  .reviews__item-text {
+    width: auto;
+    font-size: 18px;
+  }
+
+  .reviews__name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    max-width: 688px;
+    margin: 0 auto;
+  }
+
+  .reviews h3 {
+    font-size: 24px;
+  }
+
+  .gradient-overlay {
+    width: 153px;
+    height: 153px;
+  }
+
+  .reviews__image-one {
+    width: 153px;
+    height: 153px;
+  }
+
+  .reviews__image-two {
+    width: 153px;
+    height: 153px;
+    margin: 0;
+  }
+
+  .reviews__image-three {
+    width: 153px;
+    height: 153px;
+    margin: 0;
+  }
+
+  .reviews__content {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 15px;
+  }
+
+  .reviews__item-text {
+    font-size: 16px;
+    top: 35px;
+  }
+
+  .reviews__image {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .reviews__name {
+    font-size: 14px;
+  }
 }

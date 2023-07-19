@@ -1,7 +1,8 @@
 .halls__list {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .halls__image {
@@ -9,13 +10,14 @@
 }
 
 .halls__title {
-  margin-bottom: 60px;
+  margin-bottom: 47px;
   text-align: center;
   font-size: 40px;
   text-transform: uppercase;
 }
 
 .halls__name-one {
+  display: block;
   background-image: url("../img/80s-vibe.jpg");
   width: 580px;
   height: 349px;
@@ -28,6 +30,7 @@
 }
 
 .halls__name-two {
+  display: block;
   background-image: url("../img/star_wars.jpg");
   width: 580px;
   height: 349px;
@@ -40,6 +43,7 @@
 }
 
 .halls__name-three {
+  display: block;
     background-image: url("../img/wild_west.jpg");
     width: 580px;
     height: 349px;
@@ -52,6 +56,7 @@
   }
 
   .halls__name-four {
+    display: block;
     background-image: url("../img/neon_style.jpg");
     width: 580px;
     height: 349px;
@@ -71,18 +76,17 @@
 }
 
 .halls__item {
-  height: 349px;
   position: relative;
   float: left;
   vertical-align: top;
 }
 
-.halls__item:not(:nth-child(2n)) {
+/* .halls__item:not(:nth-child(2n)) {
   margin-right: 20px;
   margin-bottom: 20px;
-}
+} */
 
-.halls__name {
+/* .halls__name {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -91,4 +95,86 @@
   margin: 0;
   text-transform: uppercase;
   white-space: nowrap;
+} */
+
+@media (max-width: 1024px) {
+  .halls {
+    max-width: 904px;
+    margin: 0 auto;
+  }
+
+  .halls__list {
+    margin-bottom: 51px;
+  }
+
+  .halls__title {
+    font-size: 30px;
+  }
+
+  .halls__name-one {
+    width: 440px;
+    height: 267px;
+    line-height: 270px;
+    font-size: 50px;
+  }
+
+  .halls__name-two {
+    width: 440px;
+    height: 267px;
+    line-height: 270px;
+    font-size: 50px;
+  }
+  
+  .halls__name-three {
+    width: 440px;
+    height: 267px;
+    line-height: 270px;
+    font-size: 50px;
+  }
+
+  .halls__name-four {
+    width: 440px;
+    height: 267px;
+    line-height: 270px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .halls {
+    max-width: 688px;
+    margin: 0 auto;
+  }
+
+  .halls__title {
+    font-size: 24px;
+  }
+
+  .halls__name-one {
+    width: 335px;
+    height: 200px;
+    font-size: 40px;
+    line-height: 200px;
+  }
+
+  .halls__name-two {
+    width: 333px;
+    height: 200px;
+    font-size: 40px;
+    line-height: 200px;
+  }
+
+  .halls__name-three {
+    width: 335px;
+    height: 200px;
+    font-size: 40px;
+    line-height: 200px;
+  }
+
+  .halls__name-four {
+    width: 333px;
+    height: 200px;
+    font-size: 40px;
+    line-height: 200px;
+  }
 }

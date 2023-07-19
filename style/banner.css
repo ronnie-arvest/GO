@@ -3,8 +3,12 @@
   margin-bottom: 40px;
 }
 
+.banner__content {
+  margin-bottom: 123px;
+}
+
 .banner__title {
-  font-size: 150px;
+  font-size: 9.375rem;
   text-transform: uppercase;
   letter-spacing: -0.1em;
   text-align: left;
@@ -16,6 +20,7 @@
   text-align: left;
   margin-left: 100px;
   margin-top: 0;
+  margin-bottom: 60px;
 }
 
 .banner__items {
@@ -25,7 +30,7 @@
   gap: 20px;
   max-width: 150px;
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 36px;
 }
 
 .banner__group-1,
@@ -38,18 +43,24 @@
 }
 
 .banner__span {
-  font-size: 100px;
+  font-size: 6.25rem;
+  font-weight: bold;
+  color: var(--banner-span-color);
+}
+
+.banner__span-new {
+  font-size: 4.6875rem;
   font-weight: bold;
   color: var(--banner-span-color);
 }
 
 .banner__text {
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 34px;
 }
 
 .banner__quote {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
 }
 
@@ -63,6 +74,8 @@
   font-size: 26px;
   text-transform: uppercase;
   line-height: 247px;
+  filter:
+  drop-shadow(5px 5px 10px #640AA3);
 }
 
 .banner__link:hover {
@@ -84,14 +97,14 @@
 .banner__image {
   position: absolute;
   height: auto;
-  left: 400px;
-  top: 90px;
+  left: 504px;
+  top: 72px;
 }
 
 .banner__svg {
   position: absolute;
   top: 84%;
-  left: 47%;
+  left: 46%;
   z-index: 1;
   cursor: pointer;
 }
@@ -114,4 +127,102 @@
 
 .banner__svg:active rect {
   fill: var(--main-color);
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    max-width: 904px;
+    margin: 0 auto;
+  }
+
+  .banner__content {
+    margin-bottom: 87px;
+  }
+
+  .banner__image {
+    width: 453px;
+    top: 110px;
+    left: 448px;
+  }
+
+  .banner__title {
+    font-size: 120px;
+  }
+
+  .banner__quote {
+    font-size: 22px;
+  }
+
+  .banner__span {
+    font-size: 80px;
+  }
+
+  .banner__span-new {
+    font-size: 60px;
+  }
+
+  .banner__text {
+    font-size: 26px;
+  }
+
+  .banner__link {
+    padding: 17px 48px;
+    font-size: 22px;
+  }
+
+  .banner__items {
+    margin-bottom: -44px;
+  }
+
+  .banner__svg {
+    width: 67px;
+    height: 67px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    max-width: 688px;
+    margin: 0 auto;
+  }
+
+  .banner__title {
+    font-size: 86px;
+  }
+
+  .banner__quote {
+    font-size: 18px;
+  }
+
+  .banner__span {
+    font-size: 50px;
+  }
+
+  .banner__span-new {
+    font-size: 40px;
+  }
+
+  .banner__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .banner__image {
+    width: 409px;
+    height: 461px;
+    top: 56px;
+    left: 280px;
+  }
+
+  .banner__link {
+    font-size: 16px;
+  }
+
+  .banner__svg {
+    display: none;
+  }
+
+  .banner__content {
+    margin-bottom: 80px;
+  }
 }
