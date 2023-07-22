@@ -1,6 +1,6 @@
-@import url("style/var.css");
-@import url("style/style.css");
-@import url("../style/header.css");
+@import url("/style/var.css");
+@import url("/style/style.css");
+@import url("/style/header.css");
 @import url("../style/banner.css");
 @import url("../style/wehave.css");
 @import url("../style/halls.css");
