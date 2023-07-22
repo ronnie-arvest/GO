@@ -1,0 +1,150 @@
+.header {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header__logo {
+  filter:
+  drop-shadow(5px 5px 20px #640AA3);
+}
+
+.header__menu {
+  display: none;
+  color: #6C0287;
+  border: 1px solid transparent;
+}
+
+.header__menu:hover {
+  color: #CD06FF;
+}
+
+.header__menu:focus {
+  color: #CD06FF;
+}
+
+.header__menu:active{
+  color: #840AA3;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__link {
+  padding-right: 30px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.header__button-link {
+  border: 3px solid #CD06FF;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.header__button-link:hover {
+  background-color: var(--button-color);
+}
+
+.header__button-link:focus {
+  background-color: var(--button-color);
+}
+
+.header__button-link:active { 
+  border: 3px solid black;
+  background-color: #640AA3;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    max-width: 904px;
+    margin: 0 auto;
+  }
+
+  .header__logo {
+    width: 87px;
+    height: 55px;
+  }
+
+  .header__link {
+    font-size: 18px;
+  }
+
+  .header__button-link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .header {
+    max-width: 688px ;
+    margin: 0 auto;
+  }
+
+  .header__container {
+    flex-direction: row;
+  }
+
+  .header__menu {
+    display: flex;
+    order: 1;
+  }
+
+  .header__logo {
+    display: flex;
+    order: 0;
+  }
+
+  .header__button {
+    display: flex;
+    width: 229px;
+    order: 2;
+  }
+
+  .header__button-link {
+    padding: 10px 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .header__container {
+    padding-bottom: 0;
+  }
+
+  .header__logo {
+    width: 65px;
+    height: 42px;
+  }
+
+  .header__menu {
+    width: 39px;
+    height: 20px;
+  }
+}

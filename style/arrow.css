@@ -1,0 +1,41 @@
+.arrow {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.arrow__link {
+  font-size: 22px;
+  background-image: url('../img/arrow.svg');
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@media (max-width: 1024px) {
+  .arrow {
+    max-width: 904px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    max-width: 688px;
+    margin: 0 auto;
+  }
+
+  .arrow__link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .arrow__link {
+    font-size: 12px;
+  }
+}
