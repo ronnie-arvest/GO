@@ -1,5 +1,5 @@
 .footer__container {
-  max-width: 1280px;
+  max-width: 1180px;
   margin: 0 auto;
   margin-bottom: 156px;
 }
@@ -126,10 +126,47 @@
   flex-direction: column;
 }
 
+.social__link {
+  outline: 1px solid transparent;
+}
+
+.social__link:hover {
+  color: #EADEED;
+}
+
+.social__link:active {
+  color: #CD06FF;
+}
+
+.social__link:focus {
+  outline-color: #CD06FF;
+}
+
+/* .social__vk:hover {
+    fill: #EADEED;
+}
+
+.social__tg:hover {
+  fill: #EADEED;
+}
+
+.social__sv:hover {
+  fill: #EADEED;
+}
+
+.social__pin:hover {
+  fill: #EADEED;
+} */
+
 @media (max-width: 1024px) {
   .footer__container {
     max-width: 904px !important;
     margin: 0 auto !important;
+  }
+
+  .footer__title {
+    font-size: 30px;
+    margin-bottom: 26px;
   }
 
   .footer__map {
@@ -139,6 +176,7 @@
 
   .social {
     margin-bottom: 100px;
+    gap: 26px;
   }
 
   .madeby {
@@ -176,13 +214,119 @@
     align-items: center;
   }
 
+  .footer__title {
+    font-size: 24px;
+  }
+
+  .footer__item-p {
+    font-size: 24px;
+  }
+
   .social {
     display: flex;
     order: 1;
+    margin-bottom: 30px;
   }
 
   .footer__map {
     width: 668px;
     height: 337px;
+  }
+
+  .footer__list {
+    order: 3;
+    text-align: center;
+  }
+
+  .footer__list-two {
+    order: 2;
+    text-align: center;
+  }
+
+  .footer__list-phone {
+    margin-bottom: 15px;
+  }
+
+  .footer__map {
+    margin-bottom: 75px;
+  }
+
+  .madeby {
+    max-width: 688px !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    background: linear-gradient(#1B1A1B, #370A37);
+  }
+
+  .footer__container {
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+
+  .footer__title {
+    margin: 0;
+  }
+
+  .footer__map {
+    width: 280px;
+    height: 194px;
+  }
+
+  .footer__title {
+    font-size: 14px;
+  }
+
+  .footer__item-p {
+    font-size: 14px;
+    line-height: 12px;
+  }
+
+  .footer__item-adress {
+    display: block;
+  }
+
+  .footer__img-location {
+    width: 20px;
+    margin: 0;
+  }
+
+  .footer__img-item {
+    width: 20px;
+    padding: 0;
+  }
+
+  .social {
+    gap: 20px;
+    margin-top: 0;
+  }
+
+  .social__vk {
+    width: 30px;
+  }
+
+  .social__tg {
+    width: 30px;
+  }
+
+  .social__sv {
+    width: 30px;
+  }
+
+  .social__pin {
+    width: 30px;
+  }
+
+  .madeby {
+    max-width: 280px !important;
+    margin: 0 auto !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
   }
 }

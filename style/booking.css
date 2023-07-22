@@ -342,9 +342,9 @@ input[type="checkbox"]:checked + label {
   }
 
   .date__data {
-    justify-content: center;
     gap: 50px;
     align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .date__date-n {
@@ -354,9 +354,14 @@ input[type="checkbox"]:checked + label {
   .check-form-button {
     margin-left: 50px;
   }
+
+  .section__container {
+    max-width: 904px;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 822px) {
   .booking {
     background: #440F51;
   }
@@ -388,6 +393,7 @@ input[type="checkbox"]:checked + label {
   .custom-form__fieldset {
     padding-right: 50px;
     text-transform: none;
+    margin-bottom: 40px;
   }
 
   .date__data {
@@ -415,5 +421,104 @@ input[type="checkbox"]:checked + label {
 
   .date__text-n {
     flex-basis: auto;
+  }
+
+  #f3 {
+    padding-left: 31px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking__container {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .second__title-m {
+    font-size: 14px;
+    padding-top: 13px;
+    margin: 0 auto 12px;
+  }
+
+  .booking__p {
+    font-size: 14px;
+    margin-bottom: 11px;
+  }
+
+  .booking__fieldset {
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 27px;
+  }
+
+  .booking__label {
+    font-size: 14px;
+    flex-basis: 130px;
+    padding: 4px 0;
+  }
+
+  .custom-form__text {
+    font-size: 14px;
+    margin-bottom: 9px;
+  }
+
+  .custom-form__legend {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .custom-form__checkbox-label {
+    font-size: 16px;
+  }
+
+  .custom-form__radio-label {
+    font-size: 16px;
+  }
+
+  #f2 {
+    padding-left: 31px;
+  }
+
+  #f3 {
+    padding-left: 31px;
+  }
+
+  .date__date {
+    flex-wrap: wrap;
+    column-gap: 26px;
+  }
+
+  .date__text {
+    font-size: 14px;
+    flex: 0;
+  }
+  
+  .date__text-n {
+    width: 280px;
+  }
+
+  .check-form__input {
+    width: 280px;
+  }
+
+  .date__date-n {
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: fit-content;
+    margin-bottom: 25px;
+  }
+
+  .check-form-button {
+    width: 280px;
+    margin: 0;
+  }
+
+  .check-form {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .date__button {
+    margin: 0;
   }
 }

@@ -71,6 +71,10 @@
     margin: 0 auto;
   }
 
+  .faq h2 {
+    font-size: 30px;
+  }
+
   .faq__element:nth-child(even) {
     background-color: var(--main-color);
     color: var(--faq-color);
@@ -117,5 +121,35 @@
 
   .faq__element:nth-child(odd):after {
     top: -17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .haq h2 {
+    font-size: 14px;
+  }
+
+  .faq__element {
+    font-size: 10px;
+    height: 46px;
+    padding: 28px 7px;
+    line-height: 0;
+  }
+
+  .faq__element:nth-child(odd)::after {
+    top: -23px; 
+  }
+
+  .faq__element:nth-child(even)::after {
+    top: -23px;
+  }
+
+  .faq__list {
+    margin-bottom: 0;
   }
 }

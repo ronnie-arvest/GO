@@ -1,3 +1,8 @@
+.header {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -12,6 +17,20 @@
 
 .header__menu {
   display: none;
+  color: #6C0287;
+  border: 1px solid transparent;
+}
+
+.header__menu:hover {
+  color: #CD06FF;
+}
+
+.header__menu:focus {
+  color: #CD06FF;
+}
+
+.header__menu:active{
+  color: #840AA3;
 }
 
 .header__list {
@@ -82,21 +101,50 @@
 
   .header__menu {
     display: flex;
-    order: 0;
+    order: 1;
   }
 
   .header__logo {
     display: flex;
-    order: 1;
+    order: 0;
   }
 
   .header__button {
     display: flex;
-    order: 2;
     width: 229px;
+    order: 2;
   }
 
   .header__button-link {
     padding: 10px 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .header__container {
+    padding-bottom: 0;
+  }
+
+  .header__logo {
+    width: 65px;
+    height: 42px;
+  }
+
+  .header__menu {
+    width: 39px;
+    height: 20px;
   }
 }

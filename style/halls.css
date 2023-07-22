@@ -27,6 +27,12 @@
   background-position: center;
   line-height: 340px;
   text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.halls__name-one:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 .halls__name-two {
@@ -40,6 +46,12 @@
   background-position: center;
   line-height: 340px;
   text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.halls__name-two:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 .halls__name-three {
@@ -53,7 +65,13 @@
     background-position: center;
     line-height: 340px;
     text-transform: uppercase;
+    transition: transform 0.3s ease;
   }
+
+.halls__name-three:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
 
   .halls__name-four {
     display: block;
@@ -66,7 +84,13 @@
     background-position: center;
     line-height: 340px;
     text-transform: uppercase;
+    transition: transform 0.3s ease;
   }
+
+.halls__name-four:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
 
 .halls__item-one {
   height: 349px;
@@ -176,5 +200,50 @@
     height: 200px;
     font-size: 40px;
     line-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .halls {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .halls__title {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .halls__list {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .halls__name-one {
+    width: 280px;
+    height: 168px;
+    font-size: 26px;
+    line-height: 170px;
+  }
+
+  .halls__name-two {
+    width: 280px;
+    height: 168px;
+    font-size: 26px;
+    line-height: 170px;
+  }
+  
+  .halls__name-three {
+    width: 280px;
+    height: 168px;
+    font-size: 26px;
+    line-height: 170px;
+  }
+
+  .halls__name-four {
+    width: 280px;
+    height: 168px;
+    font-size: 26px;
+    line-height: 170px;
   }
 }

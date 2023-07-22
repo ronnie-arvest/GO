@@ -144,3 +144,60 @@ margin-bottom: 50px;
     margin-left: 405px;
   }
 }
+
+@media (max-width: 480px) {
+  .about {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .about h3 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .about__img-txt {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about__us-text {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about__us-text-b {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .about__us-text-b:before {
+    font-size: 40px;
+  }
+
+  .about__us-text-b:after {
+    font-size: 40px;
+  }
+
+  .about__us-image {
+    width: 56px;
+    height: 56px;
+  }
+
+  .about__us-image-main {
+    margin: 0;
+  }
+
+  .about-cite {
+    margin-left: 0;
+  }
+
+  .about__us-text-c {
+    font-size: 12px;
+  }
+
+  .about-p {
+    width: auto;
+  }
+}

@@ -1,6 +1,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -13,6 +14,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: var(--bgcolor);
   color: var(--main-color);
+  margin: 0;
 }
 
 img, svg {
@@ -60,12 +62,12 @@ iframe {
 
 a:hover {
   color: gainsboro;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 *:hover, *:focus, *:active {
   transition-duration: 300ms;
-  transition-timing-function: ease;
+  transition-timing-function: ease-in-out;
 }
 
 .container {
