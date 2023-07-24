@@ -186,6 +186,7 @@ margin-bottom: 50px;
   }
 
   .about__us-image-main {
+    max-width: 100%;
     margin: 0;
   }
 
