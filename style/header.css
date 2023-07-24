@@ -50,6 +50,7 @@
   border-radius: 8px;
   font-size: 22px;
   text-transform: uppercase;
+  color: var(--main-color);
 }
 
 .header__button-link:hover {
