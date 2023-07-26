@@ -1,13 +1,11 @@
 .header {
-  max-width: 1180px;
-  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .header__container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  align-items: center;
 }
 
 .header__logo {
@@ -66,11 +64,15 @@
   background-color: #640AA3;
 }
 
-@media (max-width: 1024px) {
-  .header {
+@media (max-width: 1240px) {
+  .container {
+    --width: 904px;
+  }
+
+  /* .header__container {
     max-width: 904px;
     margin: 0 auto;
-  }
+  } */
 
   .header__logo {
     width: 87px;
@@ -86,7 +88,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 940px) {
   .header__navigation {
     display: none;
   }

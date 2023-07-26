@@ -213,35 +213,59 @@
                 </fieldset>
             </fieldset>
             </div>
-
+            <p class="custom-form__text">Выбери дату и время</p>
             <div class="date__date">
-              <fieldset class="check-form">
-                <p class="custom-form__text">Выбери дату и время</p>
 
-                <div class="date__data">
+              <fieldset class="check-form">
+
+
+                <!-- <div class="date__data">
                   <div class="date__date">
                     <p class="date__text">Дата </p>
                     <p class="date__text">Время</p>
                     <p class="date__text-n">Сколько человек</p>
-                  </div>
+                  </div> -->
 
-                  <div class="date__date-n">
-                    <label for="name" class="check-form__label">Имя</label>
-                    <input type="text" name="lastname" id="lastname" required class="check-form__input">
-                    <label for="lastname" class="check-form__label">Фамилия</label>
-                    <input type="text" name="lastname" id="lastname" required class="check-form__input">
-                    <label for="tel" class="check-form__label">Номер телефона</label>
-                    <input type="tel" name="tel" id="tel" required class="check-form__input">
-                    <label for="email" class="check-form__label">E-mail</label>
-                    <input type="email" name="email" id="email" required class="check-form__input">
+                  <div class="date__data">
+                    <div class="date__date">
+                      <div class="date__date-td">
+                      <input class="date__text" type="date" placeholder="Выберите дату">
+                      <input class="date__text" type="time" placeholder="Выберите время">
+                      </div>
+                      <div class="custom-select">
+                        <select class="date__text-n">
+                          <option value="1">1 человек</option>
+                          <option value="2">2 человека</option>
+                          <option value="3">3 человека</option>
+                          <option value="2">4 человека</option>
+                          <option value="3">5 человек</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="date__date-n">
+                      <label for="name" class="check-form__label">Имя</label>
+                      <input type="text" name="lastname" id="lastname" required class="check-form__input">
+                      <label for="lastname" class="check-form__label">Фамилия</label>
+                      <input type="text" name="lastname" id="lastname" required class="check-form__input">
+                      <label for="tel" class="check-form__label">Номер телефона</label>
+                      <input type="tel" name="tel" id="tel" required class="check-form__input">
+                      <label for="email" class="check-form__label">E-mail</label>
+                      <input type="email" name="email" id="email" required class="check-form__input">
+                    </div>
                   </div>
-                </div>
-                <!-- <input type="checkbox" name="ageconfirm" id="ageconfirm" required class="check-form__input">
-          <label for="ageconfirm" class="check-form__checkbox-label">Я старше 18 лет</label> -->
-                <div class="date__button">
-                  <button type="submit" class="check-form-button">Забронировать</button>
-                </div>
-            </div>
+                  <!-- <input type="checkbox" name="ageconfirm" id="ageconfirm" required class="check-form__input">
+            <label for="ageconfirm" class="check-form__checkbox-label">Я старше 18 лет</label> -->
+                  <div class="date__button">
+                    <button type="submit" class="check-form-button">Забронировать</button>
+                  </div>
+              </div>
+
+                  </div>
+                  
+                  
+
+
 
             <!-- <input type="checkbox" name="policy" id="policy" required class="checkbox-input">
           <label for="policy" class="checkbox-label">Согласен на обработку данных</label> -->
@@ -337,31 +361,38 @@
 
   <footer class="footer">
     <h3 class="footer__title" id="contacts">Контакты</h3>
-    <div class="footer__container">
+    <div class="container footer__container">
       <picture>
-        <source media="(max-width: 320px)" srcset="./img/map_320.jpg">
+        <source media="(max-width: 640px)" srcset="./img/map_320.jpg">
         <source media="(max-width: 768px)" srcset="./img/map_768.jpg">
-        <source media="(max-width: 1024px)" srcset="./img/map_1024.jpg">
+        <source media="(max-width: 1240px)" srcset="./img/map_1024.jpg">
         <img class="footer__map" src="./img/map.jpg" alt="Карта">
       </picture>
 
-      <div class="footer__list">
-        <div class="footer__item-adress">
+      <nav class="footer__list">
+        <ul class="footer__item-adress">
+          <li class="footer__item-a">
           <img class="footer__img-location" src="./img/location.svg" alt="Адрес">
           <span class="footer__item-p">г. Москва
             <br> ул. Усачёва, 29 к3</span>
-        </div>
-      </div>
-      <div class="footer__list-two">
-        <div class="footer__list-phone">
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="footer__list-two">
+        <ul class="footer__list-phone">
+          <li class="footer__list-items">
           <img class="footer__img-item" src="./img/bx_bxs-phone-call.svg" alt="Телефон">
           <span class="footer__item-p"><a class="footer__link-list" href="tel:89509302893">8 (950) 930 - 28 - 93</a></span>
-        </div>
-        <div class="footer__list-email">
+          </li>
+        </ul>
+        <ul class="footer__list-email">
+          <li class="footer__list-e">
           <img class="footer__img-item" src="./img/envelope.svg" alt="Почта">
           <span class="footer__item-p"><a class="footer__link-list" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></span>
-        </div>
-      </div>
+        </li>
+        </ul>
+      </nav>
 
       <ul class="social">
         <li class="social__item">

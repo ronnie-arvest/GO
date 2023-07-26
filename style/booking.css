@@ -58,8 +58,9 @@
   background-color: #EADEED;
 }
 
-.booking__laber:focus {
-  background-color: #FFFFFF;
+.booking__label:focus {
+  border: 3px solid #640AA3;
+  background-color: #ffffff;
 }
 
 .booking__label:active {
@@ -207,19 +208,45 @@ input[type="checkbox"]:checked + label {
   flex-wrap: wrap;
   flex-basis: 300px;
   column-gap: 22px;
-  row-gap: 13px;
+  row-gap: 36px;
   margin-top: 15px;
   margin-bottom: 52px;
 }
 
+.date__date-td {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
 .date__text {
   position: relative;
-  font-size: 18px;
-  padding: 12px 70px 12px 20px;
+  font-size: 12px;
+  padding: 14px 27px 12px 20px;
   background-color: #fff;
   color: black;
   flex: 1 0 auto;
+  width: 134px;
 }
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  display: none;
+} */
+
+/* input[type="date"]::-webkit-datetime-edit-text {
+  padding: 5px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+} */
 
 .date__input {
   position: absolute;
@@ -237,7 +264,7 @@ input[type="checkbox"]:checked + label {
   justify-content: center;
 }
 
-.date__text::after {
+/* .date__text::after {
   background-image: url("../img/Polygon_1.svg");
   content: "";
   position: absolute;
@@ -247,7 +274,7 @@ input[type="checkbox"]:checked + label {
   width: 20px;
   height: 13px;
   background-size: cover;
-}
+} */
 
 .date__text-n {
   position: relative;
@@ -268,7 +295,7 @@ input[type="checkbox"]:checked + label {
   column-gap: 20px;
 }
 
-.date__text-n::after {
+/* .date__text-n::after {
   background-image: url("../img/Polygon_1.svg");
   content: "";
   position: absolute;
@@ -278,10 +305,10 @@ input[type="checkbox"]:checked + label {
   width: 20px;
   height: 13px;
   background-size: cover;
-}
+} */
 
 .check-form__input {
-  width: 300px;
+  max-width: 285px;
   height: 48px;
   margin-bottom: 18px;
 }
@@ -297,7 +324,8 @@ input[type="checkbox"]:checked + label {
 .date__button {
   float: right;
   width: 300px;
-  margin-right: 72px;
+  margin-right: 110px;
+  margin-bottom: 80px;
   filter:
   drop-shadow(0px 0px 10px #fff);
 }
@@ -320,6 +348,7 @@ input[type="checkbox"]:checked + label {
 
 .check-form-button:focus {
   background-color: #EADEED;
+  border: 2px solid #640AA3;
 }
 
 .check-form-button:active {
@@ -327,7 +356,11 @@ input[type="checkbox"]:checked + label {
   border: 3px solid #6C0287;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
+  .booking__container {
+    --width: 904px;
+  }
+
   .second__title-m {
     font-size: 30px;
   }
@@ -351,8 +384,14 @@ input[type="checkbox"]:checked + label {
     column-gap: 50px;
   }
 
+  .date__button {
+    margin-bottom: 0;
+  }
+
   .check-form-button {
+    padding: 13px 45px;
     margin-left: 50px;
+    margin-bottom: 50px;
   }
 
   .section__container {
@@ -403,6 +442,11 @@ input[type="checkbox"]:checked + label {
   .date__date {
     flex-wrap: nowrap;
     margin-bottom: 15px;
+    gap: 104px;
+  }
+
+  .date__date-td {
+    gap: 16px;
   }
 
   .date__date-n {
@@ -413,6 +457,10 @@ input[type="checkbox"]:checked + label {
     width: 300px;
   }
 
+  .date__button {
+    margin-bottom: 0;
+  }
+
   .check-form-button {
     width: 300px;
     margin-left: 72px;
@@ -421,6 +469,7 @@ input[type="checkbox"]:checked + label {
 
   .date__text-n {
     flex-basis: auto;
+    width: 277px;
   }
 
   #f3 {
@@ -428,7 +477,7 @@ input[type="checkbox"]:checked + label {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .booking__container {
     max-width: 280px;
     margin: 0 auto;
@@ -486,10 +535,16 @@ input[type="checkbox"]:checked + label {
   .date__date {
     flex-wrap: wrap;
     column-gap: 26px;
+    gap: 15px;
+  }
+
+  .date__date-td {
+    justify-content: space-between;
+    gap: 12px;
   }
 
   .date__text {
-    font-size: 14px;
+    font-size: 12px;
     flex: 0;
   }
   
@@ -516,9 +571,5 @@ input[type="checkbox"]:checked + label {
   .check-form {
     max-width: 280px;
     margin: 0 auto;
-  }
-
-  .date__button {
-    margin: 0;
   }
 }

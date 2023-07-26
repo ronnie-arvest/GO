@@ -1,15 +1,31 @@
 .footer__container {
-  max-width: 1180px;
-  margin: 0 auto;
   margin-bottom: 156px;
 }
 
 .footer {
-  background: linear-gradient(#1B1A1B, #370A37);
+  background: linear-gradient(#1B1A1B, #370A37) top/contain;
 }
 
 .footer__list {
   display: flex;
+}
+
+.footer__list-items {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer__item-a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer__list-e {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .footer__title {
@@ -25,12 +41,23 @@
 }
 
 .footer__item-adress {
-  display: -webkit-inline-box;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 39px;
+  gap: 10px;
 }
 
 .footer__img-location {
+  width: 32px;
+  height: 32px;
   margin-right: 15px;
+}
+
+.footer__list-phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+  gap: 10px;
 }
 
 .footer__list-item {
@@ -42,7 +69,10 @@
 }
 
 .footer__list-email {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
+  gap: 10px;
 }
 
 .social {
@@ -53,7 +83,6 @@
 
 .footer__item-p {
   font-size: 24px;
-  width: 240px;
   line-height: 28px;
 }
 
@@ -158,10 +187,9 @@
   fill: #EADEED;
 } */
 
-@media (max-width: 1024px) {
-  .footer__container {
-    max-width: 904px !important;
-    margin: 0 auto !important;
+@media (max-width: 1240px) {
+  .container {
+    --width: 904px;
   }
 
   .footer__title {
@@ -201,7 +229,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 940px) {
   .footer {
     background: linear-gradient(#1B1A1B, #370A37);
   }
@@ -229,7 +257,7 @@
   }
 
   .footer__map {
-    width: 668px;
+    width: 100%;
     height: 337px;
   }
 
@@ -257,7 +285,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .footer {
     background: linear-gradient(#1B1A1B, #370A37);
   }
@@ -283,10 +311,6 @@
   .footer__item-p {
     font-size: 14px;
     line-height: 12px;
-  }
-
-  .footer__item-adress {
-    display: block;
   }
 
   .footer__img-location {

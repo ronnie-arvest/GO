@@ -71,7 +71,10 @@ a:hover {
 }
 
 .container {
-  max-width: 1180px;
+  --width: 1180px;
+  --padding: 20px;
+  max-width: calc(var(--width) + (var(--padding) * 2));
+  padding: 0 var(--padding);
   margin: 0 auto;
 }
 
@@ -81,4 +84,25 @@ section {
 
 .footer__container {
   margin-bottom: 156px;
+}
+
+/* Стили для выпадающего списка */
+.custom-select select {
+  appearance: none;
+  padding: 12px 70px 12px 20px;
+  font-size: 18px;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+.custom-select select:focus {
+  outline: none;
+  border-color: #640AA3;
+}
+
+/* Стили для опций в выпадающем списке */
+.custom-select select option {
+  background-color: #fff;
+  color: black;
 }

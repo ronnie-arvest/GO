@@ -127,7 +127,7 @@ margin-bottom: 50px;
   .about__us-text {
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 190px;
+    margin-bottom: 108px;
   }
 
   .about__us-text-b {
@@ -141,11 +141,11 @@ margin-bottom: 50px;
   }
 
   .about-cite {
-    margin-left: 405px;
+    margin-left: 365px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .about {
     max-width: 280px;
     margin: 0 auto;
